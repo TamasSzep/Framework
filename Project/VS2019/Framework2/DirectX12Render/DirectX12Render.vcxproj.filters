@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Resources">
+      <UniqueIdentifier>{e783b34e-72c7-4427-bc6f-bd69ebc001b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{59942420-7ac1-4f85-bb76-0257a0e1ca79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\Test">
+      <UniqueIdentifier>{4f15b26d-88bc-46bc-8cd2-d49592660611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{3702abf9-e49a-4870-9ac1-3a3b761e1a8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\DirectX12Includes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\GraphicsDevice.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\IndexBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\VertexBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Shader.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RootSignature.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\PipelineStateObject.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2D.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ResourceDescription.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantTextureManager.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DepthStencilBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RenderTargetBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\StaticSampler.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2DBase.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DescriptorHeap.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\TransferBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Managers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\MSAAResolver.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\TextRenderer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\Utilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Buffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\View.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\RenderPassCB.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\BackgroundCMRenderer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\Utility.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Primitive.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\IndexBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\VertexBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Shader.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RootSignature.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\PipelineStateObject.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2D.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantTextureManager.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DepthStencilBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RenderTargetBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\StaticSampler.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2DBase.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DescriptorHeap.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\TransferBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\MSAAResolver.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\TextRenderer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\Utilities.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Managers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Buffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\RenderPassCB.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\BackgroundCMRenderer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Primitive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\Test\ShaderTest.hlsl">
+      <Filter>Resource Files\Shaders\Test</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\BackgroundCubemap.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\TextRender.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\ResolveDepth.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Configuration>
+
+	<Property name="Title" value="Simple DirectX 12 application" />
+  
+  <Property name="WindowedWidth" value="1920" />
+  <Property name="WindowedHeight" value="1080" />
+  <Property name="IsWindowed" value="1" />
+  <Property name="MultisampleCount" value="8" />
+  
+	<Property name="BackbufferFrameCount" value="2" />
+  <Property name="MaximumFrameLatency" value="2" />
+  <Property name="RenderQueueSize" value="2" />
+
+  <Property name="IsRenderingWireframe" value="0" />
+  <Property name="IsUsingMaterialColors" value="0" />
+  <Property name="IsUsingVertexColors" value="0" />
+
+  <Property name="SceneIndex" value="0" />
+
+</Configuration>

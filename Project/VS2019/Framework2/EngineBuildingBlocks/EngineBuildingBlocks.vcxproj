@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{349AFACA-299A-47D8-A04A-DD8F25FCB963}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EngineBuildingBlocks</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)\..\..\..\..\Build\VS2019\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\Temp\VS2019\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)\..\..\..\..\Build\VS2019\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\Temp\VS2019\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)\..\..\..\..\..\..\Build\VS2017\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\..\..\Temp\VS2017\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)\..\..\..\..\..\..\Build\VS2017\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\..\..\Temp\VS2017\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\Source\Common;$(ProjectDir)\..\..\..\..\Source\Framework2;$(ProjectDir)\..\..\..\..\..;$(ProjectDir)\..\..\..\..\..\FreeImage-3.15.4;$(ProjectDir)\..\..\..\..\..\assimp-3.3.1+\include;$(ProjectDir)\..\;$(ProjectDir)\..\..\..\..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\Source\Common;$(ProjectDir)\..\..\..\..\Source\Framework2;$(ProjectDir)\..;$(ProjectDir)\..\..\..\..;$(ProjectDir)\..\..\..\..\External;$(ProjectDir)\..\..\..\..\External\FreeImage-3.15.4;$(ProjectDir)\..\..\..\..\External\assimp-3.3.1+\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <BuildLog>
+      <Path>../$(IntDir)/$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <AdditionalDependencies>FreeImage.lib;assimp.lib;zlibstatic.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\..\External\FreeImage-3.15.4\win64;$(ProjectDir)\..\..\..\..\External\assimp-3.3.1+\built\VS2019\$(Configuration)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)\..\..\..\..\External\FreeImage-3.15.4\win64\FreeImage.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\Source\Common;$(ProjectDir)\..\..\..\..\Source\Framework2;$(ProjectDir)\..\..\..\..\..;$(ProjectDir)\..\..\..\..\..\FreeImage-3.15.4;$(ProjectDir)\..\..\..\..\..\assimp-3.3.1+\include;$(ProjectDir)\..\;$(ProjectDir)\..\..\..\..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\Source\Common;$(ProjectDir)\..\..\..\..\Source\Framework2;$(ProjectDir)\..;$(ProjectDir)\..\..\..\..;$(ProjectDir)\..\..\..\..\External;$(ProjectDir)\..\..\..\..\External\FreeImage-3.15.4;$(ProjectDir)\..\..\..\..\External\assimp-3.3.1+\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <BuildLog>
+      <Path>../$(IntDir)/$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <AdditionalDependencies>FreeImage.lib;assimp.lib;zlibstatic.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\..\External\FreeImage-3.15.4\win64;$(ProjectDir)\..\..\..\..\External\assimp-3.3.1+\built\VS2019\$(Configuration)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)\..\..\..\..\External\FreeImage-3.15.4\win64\FreeImage.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Animation\AnimationHelper.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Animation\SkeletalAnimation.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Application\Application.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Application\PostUpdateContext.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\ErrorHandling.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\EventHandling.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\FPSController.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\Camera.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\CameraProjection.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\CubemapHelper.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\FreeCamera.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Graphics.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Lighting\Lighting1.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\AssimpExtensions\SXMLSerialization.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\ModelLoader.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\PrimitiveCreation.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\Primitive.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Resources\ImageHelper.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Resources\ResourceUtility.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\SceneGraph.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\TaskSorter.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\ViewFrustumCuller.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\DefaultInputBinder.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\KeyHandler.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\Keys.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\MouseHandler.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\QtKeys.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\AABoundingBox.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\BoundingFrustum.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\GLM.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\GLMSerialization.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Intersection.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\IntervalArithmetic.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Intrinsic.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Matrix.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Plane.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Transformations.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Vector256.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\PathHandler.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\ResourceDatabase.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SceneNode.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SystemTime.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Window.hpp" />
+    <ClInclude Include="Settings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Animation\SkeletalAnimation.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\EventHandling.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\FPSController.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\Camera.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\CameraProjection.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\FreeCamera.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\AssimpExtensions\SXMLSerialization.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\ModelLoader.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\Primitive.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\PrimitiveCreation.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Resources\ImageHelper.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\SceneGraph.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\KeyHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\Keys.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\MouseHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\QtKeys.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\AABoundingBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\BoundingFrustum.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Intersection.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\IntervalArithmetic.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\PathHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\ResourceDataBase.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SceneNode.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SystemTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Core\Core.vcxproj">
+      <Project>{782f4045-19e4-4349-b37f-c96a46b1a01a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

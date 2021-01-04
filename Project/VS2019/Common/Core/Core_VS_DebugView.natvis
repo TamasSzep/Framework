@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="Core::SimpleTypeVector&lt;*&gt;">
+    <DisplayString>{{ Size={m_Size} }}</DisplayString>
+    <Expand>
+      <Item Name="[Size]" ExcludeView="simple">m_Size</Item>
+      <Item Name="[Capacity]" ExcludeView="simple">m_Capacity</Item>
+      <ArrayItems>
+        <Size>m_Size</Size>
+        <ValuePointer>m_Array</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+</AutoVisualizer>

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{782F4045-19E4-4349-B37F-C96A46B1A01A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Core</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(ProjectDir)\..\..\..\..\Temp\VS2019\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)\..\..\..\..\Build\VS2019\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(ProjectDir)\..\..\..\..\Temp\VS2019\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(ProjectDir)\..\..\..\..\Build\VS2019\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)\..\..\..\..\..\..\Build\VS2017\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\..\..\Temp\VS2017\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)\..\..\..\..\..\..\Build\VS2017\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\..\..\Temp\VS2017\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ProjectDir)/../../../../../../;$(ProjectDir)/../../../../Source/Common</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ProjectDir)/../../../../Source/Common;$(ProjectDir)/../../../..</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <BuildLog>
+      <Path>../$(IntDir)/$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ProjectDir)/../../../../../../;$(ProjectDir)/../../../../Source/Common</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(BOOST_PATH);$(ProjectDir)/../../../../Source/Common;$(ProjectDir)/../../../..</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <BuildLog>
+      <Path>../$(IntDir)/$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Common\Core\AlgorithmExtensions.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\AlignedAllocator.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\CollectionExtensions.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Comparison.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Constants.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\DataStructures\BitVector.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\DataStructures\Pool.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\DataStructures\Properties.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\DataStructures\ResourceUnorderedVector.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\DataStructures\SimpleTypeUnorderedVector.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\DataStructures\SimpleTypeUnorderedVectorWithInvalidElements.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\DataStructures\SimpleTypeVector.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Debug.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Enum.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\FixedSizedOutputStream.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Functional.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\GraphViz.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\IntervalData.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\MathHelper.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\MemoryAllocationCheck.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\ObjectCache.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Parse.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Percentage.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Platform.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\SharedPointerST.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\SimpleBinarySerialization.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\SimpleXMLSerialization.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\SingleElementPoolAllocator.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Singleton.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\String.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\StringStreamHelper.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\System\Filesystem.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\System\Semaphore.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\System\SharedMemory.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\System\SimpleIO.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\System\Socket.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\System\ThreadPool.h" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Utility.hpp" />
+    <ClInclude Include="..\..\..\..\Source\Common\Core\Windows.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Common\Core\DataStructures\BitVector.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\DataStructures\Properties.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\GraphViz.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\MathHelper.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\SingleElementPoolAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\System\SharedMemory.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\System\SimpleIO.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\System\Socket.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Common\Core\System\ThreadPool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="Core_VS_DebugView.natvis" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

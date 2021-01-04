@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{fbfe7e34-9834-488d-9b8e-b87183a849e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DirectX">
+      <UniqueIdentifier>{98312958-79ab-4b31-bea8-804e21732291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{3bb0c556-1fda-4846-a8aa-2418a2d5682f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Framework2\WindowsApplication\Input\Keys.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\WindowsApplication\DirectX\VertexSemantics.cpp">
+      <Filter>Source Files\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\WindowsApplication\DirectX\Shader.cpp">
+      <Filter>Source Files\DirectX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\Input\Keys.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\Window.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\WindowsIncludes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\Application.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\DirectX\DirectX.h">
+      <Filter>Source Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\DirectX\Format.h">
+      <Filter>Source Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\DirectX\VertexSemantics.h">
+      <Filter>Source Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\DirectX\Shader.h">
+      <Filter>Source Files\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\WindowsApplication\DirectX\GraphicsDevice.h">
+      <Filter>Source Files\DirectX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\HLSL\Lighting.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\HLSL\Math.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\HLSL\RenderPass.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\HLSL\Structures.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

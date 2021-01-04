@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Resources">
+      <UniqueIdentifier>{ae989a6d-4723-46f4-830c-feb2f88dda70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{7314144b-a0e7-4361-8bc5-525d9f5f54ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{42203bac-6455-443b-8c81-120dfa53d7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\Test">
+      <UniqueIdentifier>{99ddd396-dc05-441e-93ea-f21a8b466f5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\VertexBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Managers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\IndexBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\ConstantBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\Utilities.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\RenderPassCB.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\Shader.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\PipelineState.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\ResourceState.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\Texture2D.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\ConstantTextureManager.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\BackgroundCMRenderer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Primitive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\ScreenshotHandler.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\TextRenderer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\DirectX11Includes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\GraphicsDevice.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\VertexBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Managers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\IndexBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\ConstantBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\Utilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\Utility.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\RenderPassCB.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\Shader.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\PipelineState.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\ResourceState.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\Texture2D.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Resources\ConstantTextureManager.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\BackgroundCMRenderer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Primitive.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\ScreenshotHandler.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX11Render\Utilities\TextRenderer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\DX11\Test\ShaderTest.hlsl">
+      <Filter>Resource Files\Shaders\Test</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\DX11\RenderPass.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\DX11\Lighting.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\DX11\BackgroundCubemap.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\DX11\TextRender.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

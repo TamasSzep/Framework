@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB8727B0-7988-49B7-8172-C8099434CF05}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DirectX12Render</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)\..\..\..\..\Build\VS2019\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\Temp\VS2019\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)\..\..\..\..\Build\VS2019\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\Temp\VS2019\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\Source\Common;$(ProjectDir)\..\..\..\..\Source\Framework2;$(ProjectDir)\..\..\..\..;$(ProjectDir)\..\..\..\..\External;$(ProjectDir)\..\..\..\..\External\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <BuildLog>
+      <Path>../$(IntDir)/$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\Source\Common;$(ProjectDir)\..\..\..\..\Source\Framework2;$(ProjectDir)\..\..\..\..;$(ProjectDir)\..\..\..\..\External;$(ProjectDir)\..\..\..\..\External\DirectXTex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <BuildLog>
+      <Path>../$(IntDir)/$(MSBuildProjectName).log</Path>
+    </BuildLog>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\DirectX12Includes.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\GraphicsDevice.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Managers.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Primitive.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Buffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantTextureManager.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DepthStencilBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DescriptorHeap.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\IndexBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\PipelineStateObject.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RenderTargetBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ResourceDescription.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RootSignature.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Shader.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\StaticSampler.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2D.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2DBase.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\TransferBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\VertexBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\View.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\BackgroundCMRenderer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\MSAAResolver.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\RenderPassCB.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\TextRenderer.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\Utilities.h" />
+    <ClInclude Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\Utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Managers.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Primitive.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Buffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\ConstantTextureManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DepthStencilBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\DescriptorHeap.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\IndexBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\PipelineStateObject.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RenderTargetBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\RootSignature.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Shader.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\StaticSampler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\Texture2DBase.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\TransferBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Resources\VertexBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\BackgroundCMRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\MSAAResolver.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\RenderPassCB.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\TextRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Framework2\DirectX12Render\Utilities\Utilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\Test\ShaderTest.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\BackgroundCubemap.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\TextRender.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\DX12\ResolveDepth.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Core\Core.vcxproj">
+      <Project>{782f4045-19e4-4349-b37f-c96a46b1a01a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\EngineBuildingBlocks\EngineBuildingBlocks.vcxproj">
+      <Project>{349afaca-299a-47d8-a04a-dd8f25fcb963}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsApplication\WindowsApplication.vcxproj">
+      <Project>{c7fcadb5-23f9-41bc-9676-1bf8569136dd}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

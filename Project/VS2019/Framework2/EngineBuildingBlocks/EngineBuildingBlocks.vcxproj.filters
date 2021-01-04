@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{4fcb5ce0-b2b0-44d5-bb49-a3b85de39c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{59917ef5-7768-4b4c-bbb4-703a9238e8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Camera">
+      <UniqueIdentifier>{0de66a8b-6346-491f-8ac4-f8e779a5d5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{a1b02018-5441-4b4a-83e1-3e1ea705a762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Resources">
+      <UniqueIdentifier>{b98302a6-f542-4180-a045-8953cbf198b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Primitives">
+      <UniqueIdentifier>{be0bc3f0-7f4b-4ae2-8df6-489a7d2e3a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation">
+      <UniqueIdentifier>{893bf247-0ed2-47b6-81f7-b170c6709d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Lighting">
+      <UniqueIdentifier>{9717f2e2-c277-4109-9015-6d835c6a24c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Primitives\AssimpExtensions">
+      <UniqueIdentifier>{2c12fceb-ba59-49bd-898b-e66f7b113f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{cf335d08-d13d-406e-90d0-fc3e0488b3b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SceneNode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\GLM.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Intrinsic.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Vector256.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\Camera.h">
+      <Filter>Source Files\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\ErrorHandling.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\BoundingFrustum.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Plane.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\ViewFrustumCuller.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\AABoundingBox.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SystemTime.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\KeyHandler.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\Keys.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\MouseHandler.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\EventHandling.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\CameraProjection.h">
+      <Filter>Source Files\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\FreeCamera.h">
+      <Filter>Source Files\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\DefaultInputBinder.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\PathHandler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Resources\ImageHelper.h">
+      <Filter>Source Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\ModelLoader.h">
+      <Filter>Source Files\Graphics\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\ResourceDatabase.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\CubemapHelper.hpp">
+      <Filter>Source Files\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\QtKeys.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\FPSController.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Matrix.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\Primitive.h">
+      <Filter>Source Files\Graphics\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Resources\ResourceUtility.h">
+      <Filter>Source Files\Graphics\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Graphics.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Window.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Animation\SkeletalAnimation.h">
+      <Filter>Source Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Animation\AnimationHelper.h">
+      <Filter>Source Files\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\SceneGraph.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\GLMSerialization.hpp">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Transformations.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\PrimitiveCreation.h">
+      <Filter>Source Files\Graphics\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Lighting\Lighting1.h">
+      <Filter>Source Files\Graphics\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\AssimpExtensions\SXMLSerialization.h">
+      <Filter>Source Files\Graphics\Primitives\AssimpExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\TaskSorter.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Intersection.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\IntervalArithmetic.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Application\Application.hpp">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Application\PostUpdateContext.h">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SceneNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\Camera.cpp">
+      <Filter>Source Files\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\BoundingFrustum.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\AABoundingBox.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\SystemTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\KeyHandler.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\Keys.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\MouseHandler.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\EventHandling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\CameraProjection.cpp">
+      <Filter>Source Files\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Camera\FreeCamera.cpp">
+      <Filter>Source Files\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\PathHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Resources\ImageHelper.cpp">
+      <Filter>Source Files\Graphics\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\ModelLoader.cpp">
+      <Filter>Source Files\Graphics\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\ResourceDataBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Input\QtKeys.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\FPSController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\Primitive.cpp">
+      <Filter>Source Files\Graphics\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Animation\SkeletalAnimation.cpp">
+      <Filter>Source Files\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\SceneGraph.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\PrimitiveCreation.cpp">
+      <Filter>Source Files\Graphics\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Graphics\Primitives\AssimpExtensions\SXMLSerialization.cpp">
+      <Filter>Source Files\Graphics\Primitives\AssimpExtensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\Intersection.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\EngineBuildingBlocks\Math\IntervalArithmetic.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

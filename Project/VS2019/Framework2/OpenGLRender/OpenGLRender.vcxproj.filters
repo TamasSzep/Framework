@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Resources">
+      <UniqueIdentifier>{00aab5b5-595d-4472-bcfc-3f49f0862f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{9af50848-ae1c-4947-b45b-ebf4128d7a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{e1b70382-93c9-4817-aee8-69a2c4f12abe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\Test">
+      <UniqueIdentifier>{6698c4b7-1583-45de-9143-27360c19b6e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{07f2b22c-64f8-41b0-96bc-1547bb012a69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Shader.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Resource.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\VertexArrayObject.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Buffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\IndexBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\VertexBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\OpenGL.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\TextureEnums.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Texture.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Texture2D.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\FrameBufferObject.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Window.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Input\Keys.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\GLFW.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Primitive.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\UniformBuffer.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\RenderPassCB.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\ConstantTextureManager.h">
+      <Filter>Source Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Managers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\Utilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\Utility.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\BackgroundCMRenderer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\ScreenshotHandler.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\TextRenderer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Shader.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\VertexArrayObject.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Buffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\IndexBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\VertexBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\OpenGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Texture.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\Texture2D.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\FrameBufferObject.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Input\Keys.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Primitive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\UniformBuffer.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\RenderPassCB.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Resources\ConstantTextureManager.cpp">
+      <Filter>Source Files\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Managers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\Utilities.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\BackgroundCMRenderer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\ScreenshotHandler.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Framework2\OpenGLRender\Utilities\TextRenderer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Resources\Shaders\GLSL\Test\ShaderTest_ps.glsl">
+      <Filter>Resource Files\Shaders\Test</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\GLSL\Test\ShaderTest_vs.glsl">
+      <Filter>Resource Files\Shaders\Test</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\GLSL\BackgroundCubemap_ps.glsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\GLSL\BackgroundCubemap_vs.glsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\GLSL\TextRender_ps.glsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\Resources\Shaders\GLSL\TextRender_vs.glsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
