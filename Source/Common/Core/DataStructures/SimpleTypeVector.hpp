@@ -442,6 +442,19 @@ namespace Core
 			m_Array[index] = m_Array[--m_Size];
 		}
 
+		inline bool RemoveFirst(const T& element)
+		{
+			for (SizeType i = 0; i < m_Size; i++)
+			{
+				if (m_Array[i] == element)
+				{
+					Remove(i);
+					return true;
+				}
+			}
+			return false;
+		}
+
 		inline void Clear()
 		{
 			m_Size = 0;
