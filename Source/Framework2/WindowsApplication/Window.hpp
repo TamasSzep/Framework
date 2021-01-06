@@ -194,12 +194,14 @@ namespace WindowsApplication
 					window->m_OwnerApplication->OnPaintEvent();
 					return 0;
 				}
+				break;
 			case WM_DESTROY:
 				if (window != nullptr)
 				{
 					PostQuitMessage(0);
 					return 0;
 				}
+				break;
 			case WM_KEYDOWN:
 			case WM_SYSKEYDOWN:
 			case WM_KEYUP:
