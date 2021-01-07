@@ -2,7 +2,7 @@
 3d framework for OpenGL, DirectX11 and DirectX12 rendering
 
 ![GitHub Logo](/Documents/git_image.png)
-## Setup:
+## Setup
 * Unpack the following ZIPs with Total Commander:
 	* External.zip -> External (create the folder)
 	* Resources_Fonts.zip -> Resources
@@ -10,3 +10,5 @@
 	* Resources_Textures.zip -> Resources
 * Build Project/VS2019/Framework2/Timeborne.sln with Visual Studio 2019.
 * Run FrameworkTest. In FrameworkTest.cpp an enum switches between the OpenGL, DirectX11 and DirectX12 renderings.
+## FAQ
+* With DirectX11 the graphics device could not be created in debug configuration: try removing D3D11_CREATE_DEVICE_DEBUG when creating the graphics device, e.g. by commenting it out in CreateGraphicsDevice(...).
