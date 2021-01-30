@@ -78,6 +78,9 @@ namespace Core
 
 		bool HasProperty(const char* path) const;
 
+		//const char* GetRootName();
+		//void SetRoot(const char* name);
+
 		template <typename T>
 		bool TryGetPropertyValue(const char* path, T& value) const
 		{
@@ -121,6 +124,9 @@ namespace Core
 
 		void LoadFromXml(const char* path);
 		void LoadFromXmlString(const char* str);
+
+		void SaveToXml(const char* path) const;
+		std::string ToXmlString() const;
 	};
 }
 

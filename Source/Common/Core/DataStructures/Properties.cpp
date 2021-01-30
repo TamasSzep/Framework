@@ -7,9 +7,13 @@
 #include <Core/String.hpp>
 
 #include <External/rapidxml/rapidxml.hpp>
+#include <External/rapidxml/rapidxml_print.hpp>
 
-#include <queue>
 #include <algorithm>
+#include <cstdint>
+#include <memory>
+#include <queue>
+#include <sstream>
 #include <stdexcept>
 
 using namespace Core;
@@ -282,11 +286,8 @@ void Properties::LoadFromXmlString(const char* str)
 {
 	char* strCopy;
 	Copy(str, &strCopy);
-	rapidxml::xml_document<> xmlDocument;
-	xmlDocument.parse<0>(strCopy);
-	auto rootNode = xmlDocument.first_node();
-	unsigned rootNodeIndex = CreateNode(rootNode->name(), c_InvalidIndexU);
-	m_Roots.Add(rootNodeIndex);
+	auto xmlDocument = std::make_unique<rapidxml::xml_document<>>();
+	xmlDocument->parse<0>(strCopy);
 
 	struct XmlLoadingData
 	{
@@ -295,13 +296,16 @@ void Properties::LoadFromXmlString(const char* str)
 	};
 
 	std::queue<XmlLoadingData> queue;
-	queue.push({ rootNode, rootNodeIndex });
-
-	const char* propertyNodeName = "Property";
-
-	while(queue.size() > 0)
+	for (auto rootNode = xmlDocument->first_node(); rootNode != nullptr; rootNode = rootNode->next_sibling())
 	{
-		auto& nodeData = queue.front();
+		unsigned rootNodeIndex = CreateNode(rootNode->name(), c_InvalidIndexU);
+		m_Roots.Add(rootNodeIndex);
+		queue.push({ rootNode, rootNodeIndex });
+	}
+
+	while(!queue.empty())
+	{
+		const auto& nodeData = queue.front();
 		unsigned nodeIndex = nodeData.NodeIndex;
 		auto xmlNode = nodeData.XmlNode;
 		queue.pop();
@@ -310,7 +314,7 @@ void Properties::LoadFromXmlString(const char* str)
 			childXmlNode = childXmlNode->next_sibling())
 		{
 			auto cName = GetNodeName(childXmlNode);
-			if (cName == propertyNodeName)
+			if (cName == "Property")
 			{
 				auto nameAttribute = childXmlNode->first_attribute("name");
 				auto valueAttribute = childXmlNode->first_attribute("value");
@@ -327,4 +331,72 @@ void Properties::LoadFromXmlString(const char* str)
 			}
 		}
 	}
+}
+
+void Properties::SaveToXml(const char* path) const
+{
+	auto text = ToXmlString();
+	WriteAllText(path, text);
+}
+
+std::string Properties::ToXmlString() const
+{
+	auto xmlDocument = std::make_unique<rapidxml::xml_document<>>();
+
+	struct XmlSavingData
+	{
+		rapidxml::xml_node<>* XmlNode;
+		uint32_t NodeIndex;
+	};
+
+	std::queue<XmlSavingData> queue;
+	for (uint32_t i = 0; i < m_Roots.GetSize(); i++)
+	{
+		uint32_t nodeIndex = m_Roots[i];
+		const auto node = xmlDocument->allocate_node(rapidxml::node_element,
+			m_Strings[m_Nodes[nodeIndex].Name].c_str());
+		xmlDocument->append_node(node);
+		queue.push({ node , nodeIndex });
+	}
+
+	while (!queue.empty())
+	{
+		const auto& nodeData = queue.front();
+		unsigned nodeIndex = nodeData.NodeIndex;
+		auto xmlNode = nodeData.XmlNode;
+		queue.pop();
+
+		const auto& node = m_Nodes[nodeIndex];
+
+		uint32_t countProperties = node.Properties.GetSize();
+		for (uint32_t i = 0; i < countProperties; i++)
+		{
+			const auto& property = m_Properties[node.Properties[i]];
+
+			const auto propertyNode = xmlDocument->allocate_node(rapidxml::node_element, "Property");
+			const auto propertyNameAttribute = xmlDocument->allocate_attribute("name", m_Strings[property.Name].c_str());
+			const auto propertyValueAttribute = xmlDocument->allocate_attribute("value", m_Strings[property.Value].c_str());
+			propertyNode->append_attribute(propertyNameAttribute);
+			propertyNode->append_attribute(propertyValueAttribute);
+
+			xmlNode->append_node(propertyNode);
+		}
+
+		uint32_t countChildren = node.Children.GetSize();
+		for (uint32_t i = 0; i < countChildren; i++)
+		{
+			uint32_t childNodeIndex = node.Children[i];
+			const auto childNode = xmlDocument->allocate_node(rapidxml::node_element,
+				m_Strings[m_Nodes[childNodeIndex].Name].c_str());
+			xmlNode->append_node(childNode);
+			queue.push({ childNode , childNodeIndex });
+		}
+	}
+
+	std::stringstream ss;
+	for (auto rootNode = xmlDocument->first_node(); rootNode != nullptr; rootNode = rootNode->next_sibling())
+	{
+		ss << *rootNode;
+	}
+	return ss.str();
 }
