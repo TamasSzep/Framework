@@ -4,7 +4,9 @@
 ![GitHub Logo](/Documents/git_image.png)
 ## Setup
 * Unpack the following ZIPs with Total Commander:
-	* External.zip -> External (create the folder)
+    * Create a folder 'External' in Framework root
+	* External.zip -> External (copy into)
+	* External2.zip -> External (copy into)
 	* Resources_Fonts.zip -> Resources
 	* Resources_Models.zip -> Resources
 	* Resources_Textures.zip -> Resources
