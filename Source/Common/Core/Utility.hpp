@@ -1,9 +1,9 @@
 // Core/Utility.hpp
 
-#ifndef _CORE_UTILITY_HPP_INCLUDED_
-#define _CORE_UTILITY_HPP_INCLUDED_
+#pragma once
 
 #include <cassert>
+#include <cstdint>
 
 namespace Core
 {
@@ -20,6 +20,17 @@ namespace Core
 		T alignMask = alignment - 1;
 		return ((size + alignMask) & ~alignMask);
 	}
-}
 
-#endif
+	// For details see: https://graphics.stanford.edu/~seander/bithacks.html
+	inline uint32_t GetNext2Power(uint32_t v)
+	{
+		v--;
+		v |= v >> 1;
+		v |= v >> 2;
+		v |= v >> 4;
+		v |= v >> 8;
+		v |= v >> 16;
+		v++;
+		return v;
+	}
+}
